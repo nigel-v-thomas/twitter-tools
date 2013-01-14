@@ -22,5 +22,12 @@
     <dependency org="org.slf4j" name="slf4j-log4j12" rev="1.6.1" conf="*->*,!sources,!javadoc"/>
     <dependency org="junit" name="junit" rev="4.8.2" conf="*->*,!sources,!javadoc"/>
     <dependency org="log4j" name="log4j" rev="1.2.17" conf="*->*,!sources,!javadoc"/>
+
+    <dependency org="org.apache.pig" name="pig" rev="0.10.1" conf="*->*,!sources,!javadoc"/>
+    <dependency org="com.twitter.elephantbird" name="elephant-bird-core" rev="3.0.6" conf="*->*,!sources,!javadoc">
+      <exclude org="com.hadoop.gplcompression" module="hadoop-lzo"/>
+    </dependency>
+    <dependency org="com.twitter.elephantbird" name="elephant-bird-pig" rev="3.0.6" conf="*->*,!sources,!javadoc"/>
+
   </dependencies>
 </ivy-module>
